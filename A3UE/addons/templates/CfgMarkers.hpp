@@ -2,10 +2,22 @@ class CfgMarkers
 {
 	class flag_NATO;
 
-	class my_extension_marker_aaf_remnants: flag_NATO 
+	class CUP_LC_LUF: flag_NATO 
 	{
-		name = "AAF Remnants";
-		icon = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
-		texture = QPATHTOFOLDER(Pictures\Markers\marker_aaf_torn_co.paa);
+		name = "Lombakkan Union Front";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_cup_lc_luf_co.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_cup_lc_luf_co.paa);
+	};
+	class CUP_LC_NLAF: flag_NATO 
+	{
+		name = "North Lombakkan Armed Forces";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_cup_lc_nlaf_co.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_cup_lc_nlaf_co.paa);
+	};
+	class CUP_LC_SLDF: flag_NATO 
+	{
+		name = "South Lombakkan Defence Forces";
+		icon = QPATHTOFOLDER(Pictures\Markers\marker_cup_lc_sldf_co.paa);
+		texture = QPATHTOFOLDER(Pictures\Markers\marker_cup_lc_sldf_co.paa);
 	};
 };

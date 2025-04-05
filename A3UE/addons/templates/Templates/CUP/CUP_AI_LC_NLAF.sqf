@@ -85,9 +85,13 @@
 ///  Identities   ///
 /////////////////////
 
-["faces", ["PersianHead_A3_01","PersianHead_A3_02","PersianHead_A3_03"]] call _fnc_saveToTemplate;
-["voices", ["CUP_D_Male01_TK","CUP_D_Male02_TK","CUP_D_Male03_TK","CUP_D_Male04_TK","CUP_D_Male05_TK"]] call _fnc_saveToTemplate;
-"TakistaniMen" call _fnc_saveNames;
+["faces", [
+    "Barklem",
+    "TanoanHead_A3_06","TanoanHead_A3_01","TanoanHead_A3_09","TanoanHead_A3_07",
+    "TanoanHead_A3_05","TanoanHead_A3_04","TanoanHead_A3_03","TanoanHead_A3_02",
+    "AfricanHead_01","AfricanHead_03","AfricanHead_02"
+]] call _fnc_saveToTemplate;
+["voices", ["Male01FRE", "Male02FRE", "Male03FRE", "Male01ENGFRE", "Male02ENGFRE"]] call _fnc_saveToTemplate;
 
 //////////////////////////
 //       Loadouts       //
@@ -229,6 +233,8 @@ _eliteLoadoutData set ["slRifles", [
 ]];
 
 _eliteLoadoutData set ["rifles", [
+    ["CUP_arifle_TYPE_56_2", "", "", "", ["CUP_30Rnd_762x39_AK47_M"], [], ""],
+    ["CUP_arifle_TYPE_56_2_Early", "", "", "", ["CUP_30Rnd_762x39_AK47_M"], [], ""],
     ["CUP_arifle_TYPE_56_2_top_rail", "", "", "", ["CUP_30Rnd_762x39_AK47_M"], [], ""]
 ]];
 
@@ -310,6 +316,7 @@ _militaryLoadoutData set ["sniperRifles", [
 _militaryLoadoutData set ["sidearms", [
     ["CUP_hgun_Browning_HP", "", "", "", ["CUP_13Rnd_9x19_Browning_HP"], [], ""]
 ]];
+_militaryLoadoutData set ["lightATLaunchers", ["CUP_launch_RPG18"]];
 
 
 private _opticsClose = ["CUP_optic_CompM2_low", 1, "CUP_optic_CompM4", 3, "CUP_optic_MicroT1", 2, "", 1];
@@ -338,7 +345,7 @@ _policeLoadoutData set ["SMGs", [
     ["CUP_smg_MP5A5_Rail", "", "", _opticsClose, ["CUP_30Rnd_9x19_MP5"], [], ""], 1,
     ["CUP_smg_p90_black", "", "", _opticsCloseLow, ["50Rnd_570x28_SMG_03"], [], ""], 3,
     ["CUP_sgun_M1014", "", "", "", ["CUP_8Rnd_12Gauge_Pellets_No00_Buck", "CUP_8Rnd_12Gauge_Slug"], [], ""], 1,
-    ["CUP_sgun_M1014_vfg", "", "", _opticsClose, ["CUP_8Rnd_12Gauge_Pellets_No00_Buck", "CUP_8Rnd_12Gauge_Slug"], [], ""], 1
+    ["CUP_sgun_M1014_vfg", "", "", _opticsClose, ["CUP_8Rnd_12Gauge_Pellets_No00_Buck", "CUP_8Rnd_12Gauge_Slug"], [], ""], 1,
     ["CUP_sgun_M1014_solidstock", "", "", "", ["CUP_8Rnd_12Gauge_Pellets_No00_Buck", "CUP_8Rnd_12Gauge_Slug"], [], ""], 1
 ]];
 _policeLoadoutData set ["sidearms", [
@@ -383,7 +390,7 @@ _militiaLoadoutData set ["carbines", [
 ]];
 _militiaLoadoutData set ["grenadeLaunchers", [
     ["CUP_arifle_Mk16_STD_EGLM", "", _accDevices, _opticsClose, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_Red_M203"], ""],
-    ["CUP_arifle_Mk16_CQC_EGLM", "", _accDevices, _opticsClose, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_Red_M203"], ""],
+    ["CUP_arifle_Mk16_CQC_EGLM", "", _accDevices, _opticsClose, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], ["CUP_1Rnd_HE_M203", "CUP_1Rnd_Smoke_M203", "CUP_1Rnd_StarCluster_Red_M203"], ""]
 ]];
 _militiaLoadoutData set ["SMGs", [
     ["CUP_smg_MP5A5_Rail_VFG", "", _accDevices, _opticsClose, ["CUP_30Rnd_9x19_MP5"], [], ""],
@@ -402,8 +409,8 @@ _militiaLoadoutData set ["marksmanRifles", [
     ["CUP_arifle_HK417_12_Desert", "", _accDevices, _opticsLong, ["CUP_20Rnd_762x51_HK417", "CUP_20Rnd_TE1_Red_Tracer_762x51_HK417"], [], "CUP_bipod_Harris_1A2_L_BLK"], 1
 ]];
 _militiaLoadoutData set ["sniperRifles", [
-    ["CUP_srifle_AWM_wdl", "", "", ["CUP_optic_LeupoldMk4", "CUP_optic_LeupoldMk4_20x40_LRT"], [], "CUP_bipod_Harris_1A2_L_BLK"],
-    ["CUP_srifle_AWM_des", "", "", ["CUP_optic_LeupoldMk4", "CUP_optic_LeupoldMk4_20x40_LRT"], [], "CUP_bipod_Harris_1A2_L_BLK"]
+    ["CUP_srifle_AWM_wdl", "", "", ["CUP_optic_LeupoldMk4", "CUP_optic_LeupoldMk4_20x40_LRT"], ["CUP_5Rnd_86x70_L115A1","CUP_5Rnd_86x70_L115A1","CUP_5Rnd_86x70_L115A1"], [], "CUP_bipod_Harris_1A2_L_BLK"],
+    ["CUP_srifle_AWM_des", "", "", ["CUP_optic_LeupoldMk4", "CUP_optic_LeupoldMk4_20x40_LRT"], ["CUP_5Rnd_86x70_L115A1","CUP_5Rnd_86x70_L115A1","CUP_5Rnd_86x70_L115A1"], [], "CUP_bipod_Harris_1A2_L_BLK"]
 ]];
 _militiaLoadoutData set ["sidearms", [
     ["CUP_hgun_Glock17_tan", "", "", "", ["CUP_17Rnd_9x19_glock17"], [], ""]

@@ -12,8 +12,8 @@
 
 ["vehiclesBasic", ["Flex_CUP_LUF_TT650"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["Flex_CUP_LUF_Datsun_4seat", "Flex_CUP_LUF_Hilux_unarmed", "Flex_CUP_LUF_Hilux_armored_unarmed"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["Flex_CUP_LUF_Datsun_PK", "Flex_CUP_LUF_Hilux_DSHKM", "Flex_CUP_LUF_Hilux_M2", "Flex_CUP_LUF_Hilux_armored_DSHKM", "Flex_CUP_LUF_Hilux_armored_M2"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["Flex_CUP_LUF_V3S_Open", "Flex_CUP_LUF_V3S_Covered"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["Flex_CUP_LUF_Datsun_PK", "Flex_CUP_LUF_Hilux_DSHKM", "Flex_CUP_LUF_Hilux_M2", "Flex_CUP_LUF_Hilux_armored_DSHKM", "Flex_CUP_LUF_Hilux_armored_M2", "Flex_CUP_LUF_BTR40_MG"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["Flex_CUP_LUF_V3S_Open", "Flex_CUP_LUF_V3S_Covered", "Flex_CUP_LUF_BTR40"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["Flex_CUP_LUF_Hilux_SPG9", "Flex_CUP_LUF_Hilux_UB32", "Flex_CUP_LUF_Hilux_armored_SPG9", "Flex_CUP_LUF_Hilux_armored_UB32"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["Flex_CUP_LUF_Hilux_zu23", "Flex_CUP_LUF_Hilux_armored_zu23"]] call _fnc_saveToTemplate;
 ["vehiclesBoat", ["Flex_CUP_LUF_Boat_2"]] call _fnc_saveToTemplate;

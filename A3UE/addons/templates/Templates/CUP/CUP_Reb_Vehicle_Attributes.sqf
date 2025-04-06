@@ -3,6 +3,8 @@
     ["Flex_CUP_LUF_Datsun_PK", ["rebCost", 600]],
 	
     // up-armored vehicles
+    ["Flex_CUP_LUF_BTR40", ["rebCost", 1000]],
+    ["Flex_CUP_LUF_BTR40_MG", ["rebCost", 1500]],
     ["Flex_CUP_LUF_Hilux_armored_unarmed", ["rebCost", 1000]],
     ["Flex_CUP_LUF_Hilux_armored_DSHKM", ["rebCost", 2000]],
     ["Flex_CUP_LUF_Hilux_armored_M2", ["rebCost", 2000]],

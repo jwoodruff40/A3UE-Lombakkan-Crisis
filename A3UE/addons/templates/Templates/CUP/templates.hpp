@@ -8,7 +8,7 @@ class Templates
     {
         requiredAddons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs", "CUP_AirVehicles_Core", "Flex_CUP_LOM_Equipment"};
         basepath = QPATHTOFOLDER(Templates\CUP);
-        logo = QPATHTOFOLDER(Templates\CUP\Pictures\CUP_LC_logo_mod.paa);
+        logo = QPATHTOFOLDER(Templates\CUP\images\CUP_LC_logo_mod.paa);
     };
 
     class CUP_LC_SLDF : CUP_LC_Base
@@ -49,5 +49,15 @@ class Templates
         name = "CUP LC BOC";
         description = "After the tensions on the border, the armed forces of Bocano are on high alert for possible incursions of the LUF rebels into the national territory. Although it has declared itself neutral, Bocano has good relations with North Lombakka. The army is composed mainly of conscripts and is characterized by equipment and vehicles that come from the Cold War.";
         file = "CUP_Riv_LC_BOC";
+    };
+
+    class CUP_AFR_CIV : CUP_Base
+    {
+        requiredAddons[] = {"CUP_Creatures_People_Civil_Russia", "CUP_BaseConfigs"};
+        basepath = QPATHTOFOLDER(Templates\CUP);
+        side = "Civ";
+        flagTexture = QPATHTOFOLDER(Templates\CUP\images\flag_CUP_Civ_AFR.paa);
+        name = "CUP AFR CIV";
+        file = "CUP_Civ_AFR";
     };
 };

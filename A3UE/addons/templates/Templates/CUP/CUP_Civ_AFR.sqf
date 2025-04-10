@@ -21,15 +21,15 @@
     "CUP_C_Ural_Open_Civ_01", 4,
     "CUP_C_Ural_Civ_02", 4,
     "CUP_C_Ural_Open_Civ_02", 4,
-    "CUP_C_V3S_Open_TKC", 4
+    "CUP_C_V3S_Open_TKC", 4,
     "CUP_C_V3S_Covered_TKC", 4,
     "C_Truck_02_box_F", 4
 ]] call _fnc_saveToTemplate;
 
 ["vehiclesCivBoat", [
     "CUP_C_Fishing_Boat_Chernarus", 1,
-    , "CUP_C_PBX_CIV", 1,
-    , "CUP_C_Zodiac_CIV", 1
+    "CUP_C_PBX_CIV", 1,
+    "CUP_C_Zodiac_CIV", 1
 ]] call _fnc_saveToTemplate;
 
 ["vehiclesCivRepair", [

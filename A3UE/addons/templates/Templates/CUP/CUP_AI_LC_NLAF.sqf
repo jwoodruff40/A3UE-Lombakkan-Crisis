@@ -92,6 +92,7 @@
     "AfricanHead_01","AfricanHead_03","AfricanHead_02"
 ]] call _fnc_saveToTemplate;
 ["voices", ["Male01FRE", "Male02FRE", "Male03FRE", "Male01ENGFRE", "Male02ENGFRE"]] call _fnc_saveToTemplate;
+"AfroMen" call _fnc_saveNames;
 
 //////////////////////////
 //       Loadouts       //
@@ -375,7 +376,7 @@ _militiaLoadoutData set ["slRifles", [
     ["CUP_arifle_Mk16_STD", "", _accDevices, _opticsMid, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], [], ""],
     ["CUP_arifle_Mk16_STD_AFG", "", _accDevices, _opticsMid, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], [], ""],
     ["CUP_arifle_Mk16_STD_FG", "", _accDevices, _opticsMid, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], [], ""],
-    ["CUP_arifle_Mk16_STD_SV", "", _accDevices, _opticsMid, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], [], ""]
+    ["CUP_arifle_Mk16_SV", "", _accDevices, _opticsMid, ["CUP_30Rnd_556x45_Stanag_Mk16_black", "CUP_30Rnd_556x45_Stanag_Mk16_black_Tracer_Green"], [], ""]
 ]];
 
 _militiaLoadoutData set ["rifles", [
